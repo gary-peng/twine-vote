@@ -11,54 +11,116 @@
 
 <tw-story></tw-story>
 
-<tw-storydata name="index" startnode="1" creator="Twine" creator-version="2.3.9" ifid="F7E28B15-E9D8-44FB-9DF0-609FBFDC417F" zoom="1" format="Harlowe" format-version="3.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Intro" tags="" position="100,200" size="100,100">{
+<tw-storydata name="index" startnode="11" creator="Twine" creator-version="2.3.9" ifid="F7E28B15-E9D8-44FB-9DF0-609FBFDC417F" zoom="1" format="Harlowe" format-version="3.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-story
+{
+  background-color: #ffffff;
+}
+
+tw-passage
+{
+  color: #000000;
+}
+</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Intro" tags="" position="100,200" size="100,100">{
 	(set: $char to &quot;you&quot;)
 }
-Welcome to (name of game) where one can learn the ways of voting and how your actions can impact what occurs. First off please choose certain characteristic in which you believe in:
-[[Pro-immigration, pro-abortion, anit-gun, LGBTQ+, defunding police-&gt;Characters]]
-[[Anti-Immigration, Anit- Abortion, Pro-Gun, Anti- Gay Marriage, Blue Lives Matter-&gt;Characters]]
-[[A mixture of both/ does not care for politics-&gt;End]]</tw-passagedata><tw-passagedata pid="2" name="End" tags="" position="300,400" size="100,100">Since $char decided not to vote, the candidate which they liked less won. However, since they did not do their civic duty they feel as if they could have prevented it if they had just voted. They regret it. Voting not only can help you express your beliefs but it can help lead your country to the country you want it to be. By not voting not only are you hurting your country but you do not have a right to complain since you do not act towards your belief.
+Welcome to Democracy Quest, where you can explore the process of voting and how your actions can impact what occurs. First off, please choose certain characteristics in which you believe in:
+
+[[Pro-immigration, pro-choice, favors gun laws, LGBTQ+ ally, defunding/reforming police-&gt;Characters]]
+
+[[Anti-Immigration, Anti-choice, Pro-Gun, Anti- Gay Marriage, Blue Lives Matter-&gt;Characters]]
+
+[[A mixture of both/ does not care for politics-&gt;Characters]]</tw-passagedata><tw-passagedata pid="2" name="End" tags="" position="300,400" size="100,100">&lt;/style&gt;
+&lt;img 
+src=&quot;https://live.staticflickr.com/65535/50621562133_7db8c226d3_b.jpg&quot; width=&quot;1024&quot; height=&quot;731&quot; alt=&quot;Does Not Vote&quot;&gt;&lt;/script&gt;
+&lt;/div&gt;
+
+Since $char decided not to vote, the candidate who they liked less won. However, since they did not do their civic duty they feel as if they could have prevented it had they just voted. They regret their choice. Voting is not just a way to express your beliefs, but it can help to lead your country where you want it to go. By not voting, you are not only hurting your country, but you do not have a right to complain about the results since you do not make your voice heard.
 [[End Game-&gt;Ending]]</tw-passagedata><tw-passagedata pid="3" name="Characters" tags="" position="300,200" size="100,100">Now please choose a character below:
+
+&lt;/style&gt;
+&lt;img 
+src=&quot;https://live.staticflickr.com/65535/50622407862_334f4492a6_k.jpg&quot; width=&quot;1024&quot; height=&quot;731&quot; alt=&quot;Character Select&quot;&gt;
+&lt;/div&gt;
+
 (link: &quot;Chad ( a 50 year old male that is considered an upper class citizen)&quot;)[(set: $char to &quot;Chad&quot;)(goto: &quot;Vote&quot;)]
+
 (link: &quot;Naomi ( a 30 year old mother)&quot;)[(set: $char to &quot;Naomi&quot;)(goto: &quot;Vote&quot;)]
+
 (link: &quot;Rosie ( a 40 year old female who just immigrated from Vietnam to the US)&quot;)[(set: $char to &quot;Rosie&quot;)(goto: &quot;Vote&quot;)]</tw-passagedata><tw-passagedata pid="4" name="Vote" tags="" position="500,200" size="100,100"> Choose how you would like your character to vote:
+ 
 [[Absentee ballot-&gt;Absentee]]
 [[Polling station-&gt;Poll]]
 [[Does not vote-&gt;End]]
-</tw-passagedata><tw-passagedata pid="5" name="Absentee" tags="" position="700,200" size="100,100">{
+</tw-passagedata><tw-passagedata pid="5" name="Absentee" tags="" position="700,201" size="100,100">&lt;/style&gt;
+&lt;img 
+src=&quot;https://live.staticflickr.com/65535/50622303441_61268cbee6_k.jpg&quot; width=&quot;1024&quot; height=&quot;731&quot; alt=&quot;Absentee&quot;&gt;&lt;/script&gt;
+&lt;/div&gt;
+
+{
 (if: $char is &quot;Chad&quot;)[Chad went to go get his mail when he noticed the absentee ballot in which he has requested finally arrived. Ripping it open he set it on the counter and thought about who to vote for. Who did Chad put on his absentee ballot for the Presidential Election:]
 
 (if: $char is &quot;Naomi&quot;)[Naomi bolted up and she heard her daughter crying. Tired with eye bags she ran to comfort the little one. When she went to get the mail she saw the absentee ballot she had requested. She knew she had no time to go to a polling station due to her 8-5 job and 3 children to support. Who did Naomi put on her absentee ballot for the Presidential Election:]
 
 (if: $char is &quot;Rosie&quot;)[Hearing the sirens go off in her neighborhood Rosie made sure not to wake her other 6 roommates and she prepared herself for work. She was to be gone from the majority of the way. As she walked into the kitchen she saw the mail. There it was, her absentee ballot. As she ripped it open she heard gunshots ringing in her neighborhood. Shaken and sighing she thought if this was the life she would give to her children in the future. Who did Rosie put on her absentee ballot for the Presidential Election:]
 }
+
 [[To vote for the Democratic Party (Boe Jiden)-&gt;NotSubmitted]]
+
 [[To Vote for the Republican Party  (Tonald Drump)-&gt;NotSubmitted]]
+
 [[You decide not to vote for you feel as if neither party expresses your beliefs.-&gt;End]]
-</tw-passagedata><tw-passagedata pid="6" name="Poll" tags="" position="700,600" size="100,100">{
+</tw-passagedata><tw-passagedata pid="6" name="Poll" tags="" position="700,600" size="100,100">&lt;/style&gt;
+&lt;img 
+src=&quot;https://live.staticflickr.com/65535/50621562213_ca01fb40ed_b.jpg&quot; width=&quot;1024&quot; height=&quot;731&quot; alt=&quot;Long line&quot;&gt;&lt;/script&gt;
+&lt;/div&gt;
+{
 (if: $char is &quot;Chad&quot;)[Chad has just woken up and today is Nov 2, Election Day. After his golfing session and business meetings, he decided it was time for him to make his decision. As a result, he decides to head towards the polls. However, before he walks he sees that there is a long line it looks as if it may take hours before he is able to cast his vote. Does he:]
 
 (if: $char is &quot;Naomi&quot;)[Naomi has just woken up and today is Nov 2, Election Day. She feeds her child and dresses her. After she goes to make breakfast. Later in the day she finally has time to go to the polls. However, as she arrives at the polls she sees that there is a long line it looks as if it may take hours before she is able to cast her vote. Does she:]
 
 (if: $char is &quot;Rosie&quot;)[Rosie has just woken up and today is Nov 2, Election Day. As she is getting ready for her first part-time job today out of three she turns on the television. There she hears a speech in where the current president Tonald Drump is declaring how much he despises immigrants. In a foul mood, she turns it off and thinks about her mother, for she herself is not an American citizen. Upset, she thinks about how her mother’s life is in the hands of not only her but other American citizens too. Later in the day she finally has time to go to the polls. However, as she arrives at the polls she sees that there is a long line it looks as if it may take hours before he is able to cast his vote. Does she:]
 }
-[[Leave and don’t wait in line. It isn’t worth it and a waste of time.-&gt;End]]
-[[Wait in line until he is able to vote.-&gt;Line]]
-</tw-passagedata><tw-passagedata pid="7" name="NotSubmitted" tags="" position="700,400" size="100,100">Oh no, as you checked to see if your absentee ballot was submitted you see that it wasn’t. Worried you begin to think Election Day is tomorrow! What are you going to do to ensure that your vote counts:
+
+[[Leave and not wait in line. It isn’t worth it and is a waste of time.-&gt;End]]
+
+[[Wait in line until able to vote.-&gt;Line]]
+</tw-passagedata><tw-passagedata pid="7" name="NotSubmitted" tags="" position="699,402" size="100,100">&lt;/style&gt;
+&lt;img 
+src=&quot;https://live.staticflickr.com/65535/50622408307_79bc516f12_b.jpg&quot; width=&quot;1024&quot; height=&quot;731&quot; alt=&quot;Not Submitted&quot;&gt;&lt;/script&gt;
+&lt;/div&gt;
+Oh no! As you check online to see if your absentee ballot was submitted, you see that it wasn’t. Worried, you realize that Election Day is tomorrow! What are you going to do to ensure that your vote counts?
+
 [[You do not care whether or not your vote counts anymore, for you tried to submit an absentee ballot and that is as far as you are willing to go.-&gt;End]]
+
 [[You decide you will head to the polling station tomorrow.-&gt;Poll]]
-</tw-passagedata><tw-passagedata pid="8" name="Line" tags="" position="700,800" size="100,100">{
+</tw-passagedata><tw-passagedata pid="8" name="Line" tags="" position="700,800" size="100,100">&lt;/style&gt;
+&lt;img 
+src=&quot;https://live.staticflickr.com/65535/50622409502_8eb8fddf7c_b.jpg&quot; width=&quot;1024&quot; height=&quot;731&quot; alt=&quot;Voting Booth&quot;&gt;&lt;/script&gt;
+&lt;/div&gt;
+{
 (if: $char is &quot;Chad&quot;)[Chad waits in line for 2 whole hours and when he finally arrives he must make a decision who he will vote for in the Presidential election! He choses:]
 
 (if: $char is &quot;Naomi&quot;)[Naomi waits in line and it takes over 2 hours! When she finally arrives at the machine she must make a decision who she will vote for in the Presidential election. She choses:]
 
 (if: $char is &quot;Rosie&quot;)[Rosie waits for over 2 hours in line and as she finally reaches her polling machine. Now she must decide who to vote for as the next President: Does she]
 }
+
 [[Vote for the Democratic Party (Boe Jiden)-&gt;Voted]]
+
 [[Vote for the Republican Party  (Tonald Drump)-&gt;Voted]]
+
 [[You decide not to vote for you feel as if neither party expresses your beliefs.-&gt;End]]
-</tw-passagedata><tw-passagedata pid="9" name="Voted" tags="" position="700,1000" size="100,100">Congrats and thank you for voting. You have done your civic duty and even if your favored candidate did not win, you still acted. Therefore, you do not feel guilt or regret since you played your part in ensuring that your candidate and country had your support!
-[[End Game-&gt;Ending]]</tw-passagedata><tw-passagedata pid="10" name="Ending" tags="" position="300,600" size="100,100">Thank you for playing our game and we all wish to reemphasize that regardless of what challenges or hardships that occur voting is a crucial action in which all American citizens should act. Not only does it help shape the country more into the country you wish to reside in but also think about the future generation. The decisions are in your hands and even if there are challenges, you can be the reason why those challenges disappear by doing your civic duty and going out to vote! </tw-passagedata></tw-storydata>
+</tw-passagedata><tw-passagedata pid="9" name="Voted" tags="" position="700,1000" size="100,100">&lt;/style&gt;
+&lt;img 
+src=&quot;https://live.staticflickr.com/65535/50622304296_c260080fc3_b.jpg&quot; width=&quot;1024&quot; height=&quot;731&quot; alt=&quot;Voted&quot;&gt;&lt;/script&gt;
+&lt;/div&gt;
+Congrats and thank you for voting! You have done your civic duty and even if your favored candidate did not win, you still made your voice heard. Therefore, you do not feel guilt or regret since you played your part in ensuring that your candidate and country had your support!
+[[End Game-&gt;Ending]]</tw-passagedata><tw-passagedata pid="10" name="Ending" tags="" position="300,600" size="100,100">Thank you for playing our game. We all wish to reemphasize that regardless of what challenges or hardships that occur, voting is a crucial action in which all American citizens should act. Not only does it help shape the country into the one you wish to reside in, but it also effects future generations. The decisions are in your hands. Even if there are challenges, you can work towards a better country and world by doing your civic duty and going out to vote! </tw-passagedata><tw-passagedata pid="11" name="Title Screen" tags="" position="15,54.5" size="100,100">&lt;/style&gt;
+&lt;img 
+src=&quot;https://live.staticflickr.com/65535/50622408552_8d1fd4a1d6_b.jpg&quot; width=&quot;1024&quot; height=&quot;731&quot; alt=&quot;Title Screen&quot;&gt;&lt;/script&gt;
+&lt;/div&gt;
+
+[[Begin-&gt;Intro]]</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
